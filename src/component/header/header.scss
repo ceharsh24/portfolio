@@ -1,0 +1,56 @@
+.header {
+  padding: 30px 0px !important;
+  background-color: rgba(52, 66, 30, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: fixed;
+  top: 0;
+  width:100%;
+  z-index: 100;
+}
+
+.header .name {
+  color: #49515a;
+  margin: 25px 0px 0px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.header .title {
+  color: #778492;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.brand-icon {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  @media screen and (min-width : 768px) and (max-width : 1000px) {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.add-margin {
+  margin: 5px;
+}
+
+.no-left-margin {
+  margin-left: -3px;
+}
+
+.center-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+}
+
+.center-element .contact-button {
+  font-weight: 500;
+}
