@@ -27,13 +27,19 @@ class Header extends React.Component {
               <div className="name">Harsh Shah</div>
               <div className="title">Software Developer</div>
               <div>
-                <LinkedInBoxIcon size={35} color="#3277b0" className="add-margin no-left-margin"/>
-                <GithubCircleIcon size={35} color="#181616" className="add-margin"/>
-                <TwitterIcon size={35} color="#4ba1ec" className="add-margin"/>
+                <a href="https://www.linkedin.com/in/harsh2403/" target="blank">
+                  <LinkedInBoxIcon size={35} color="#90CAF9" className="add-margin no-left-margin" />
+                </a>
+                <a href="https://github.com/ceharsh24" target="blank">
+                  <GithubCircleIcon size={35} color="#ECEFF1" className="add-margin"/>
+                </a>
+                <a href="https://twitter.com/ceharsh" target="blank">
+                  <TwitterIcon size={35} color="#4ba1ec" className="add-margin"/>
+                </a>
               </div>
             </Col>
             <Col md={3} className="center-element">
-              <Button variant="outline-info" className="contact-button">Contact Me</Button>
+              <Button variant="outline-light" className="contact-button">Contact Me</Button>
             </Col>
           </Row>
         </Container>

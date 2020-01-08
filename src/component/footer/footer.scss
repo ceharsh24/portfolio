@@ -1,7 +1,11 @@
 .footer {
-  margin-top: 500px;
-  margin-bottom: 2000px;
   width: 100%;
-  background-color: black;
+  background-color:rgba(29, 36, 46, 1);
   height: 50px;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  line-height: 50px;
 }

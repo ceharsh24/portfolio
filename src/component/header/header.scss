@@ -1,22 +1,26 @@
 .header {
-  padding: 30px 0px !important;
-  background-color: rgba(52, 66, 30, 0.8);
+  padding: 20px 0px !important;
+  background-color: rgba(29, 36, 46, 0.9);
   backdrop-filter: saturate(180%) blur(20px);
   position: fixed;
   top: 0;
   width:100%;
   z-index: 100;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .header .name {
-  color: #49515a;
+  color: #fff;
   margin: 25px 0px 0px;
   font-size: 38px;
   font-weight: 600;
 }
 
 .header .title {
-  color: #778492;
+  color: #d4d4d4;
   font-size: 24px;
   font-weight: 400;
 }
@@ -44,10 +48,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  @media screen and (max-width: 768px) {
+  
+  @media screen and (max-width: 767px) {
     justify-content: flex-start;
     margin-top: 15px;
+    display: block;
   }
 }
 
