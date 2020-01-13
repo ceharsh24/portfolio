@@ -1,0 +1,41 @@
+.container-about {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+
+  @media screen and (max-width : 768px) {
+    padding: 10px;
+  }
+}
+
+.about {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 61px;
+}
+
+.about-body {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.about-body-highlight {
+  color: #d1376d;
+}
+
+.about-footer {
+  margin: 70px;
+  font-size: 20px;
+}
+
+.about-footer-header {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 61px;
+}
+
+.about-footer-add-bottom-margin {
+  @media screen and (max-width : 768px) {
+    margin-bottom: 30px;
+  }
+}

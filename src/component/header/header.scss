@@ -1,61 +1,39 @@
 .header {
   padding: 20px 0px !important;
-  background-color: rgba(29, 36, 46, 0.9);
+  background-color: rgba(41, 41, 41, 0.15);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  position: fixed;
-  top: 0;
-  width:100%;
-  z-index: 100;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  font-family: 'Poppins', sans-serif;
 }
 
-.header .name {
-  color: #fff;
-  margin: 25px 0px 0px;
-  font-size: 38px;
-  font-weight: 600;
+.navbar-links {
+  font-weight: 700;
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff !important;
+  margin-top: 4px; 
+  margin-left: 4vw; 
+  text-align: left !important;
 }
 
-.header .title {
-  color: #d4d4d4;
-  font-size: 24px;
-  font-weight: 400;
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
-.brand-icon {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-
-  @media screen and (min-width : 768px) and (max-width : 1000px) {
-    width: 160px;
-    height: 160px;
-  }
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
-.add-margin {
-  margin: 5px;
-}
-
-.no-left-margin {
-  margin-left: -3px;
-}
-
-.center-element {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  
-  @media screen and (max-width: 767px) {
-    justify-content: flex-start;
-    margin-top: 15px;
-    display: block;
-  }
-}
-
-.center-element .contact-button {
-  font-weight: 500;
+.header .contact-button {
+  font-weight: 700;
+  margin-left: 4vw; 
+  margin-right: 4vw;
+  margin-top: 4px;
+  line-height: 27px;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
