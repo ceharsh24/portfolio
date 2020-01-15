@@ -6,6 +6,7 @@ import Header from './header/header';
 import Home from './home/home';
 import Footer from './footer/footer';
 import About from './about/about';
+import Skills from './skills/skills';
 
 import './App.scss';
 
@@ -15,8 +16,9 @@ class App extends React.Component {
       <>
         <Header />
         <Home />
-        <Container className="container-body">
+        <Container>
           <About />
+          <Skills />
         </Container>
         <Footer />
       </>
