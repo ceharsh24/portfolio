@@ -4,9 +4,22 @@ import { Navbar, Button, Nav, Form } from 'react-bootstrap';
 
 import './header.scss';
 class Header extends React.Component {
+  state = {
+    isTop: true,
+  };
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 1900;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    });
+  }
+
   render() {
     return (
-      <Navbar className="header" fixed="top" expand="md">
+      <Navbar className={this.state.isTop ? 'header header-white' : 'header header-black'} fixed="top" expand="md">
           <Navbar.Brand href="#home">
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"  />
