@@ -7,6 +7,7 @@ import Home from './home/home';
 import Footer from './footer/footer';
 import About from './about/about';
 import Skills from './skills/skills';
+import Experience from './experience/experience';
 
 import './App.scss';
 
@@ -20,6 +21,7 @@ class App extends React.Component {
           <About />
           <Skills />
         </Container>
+        <Experience />
         <Footer />
       </>
     )

@@ -5,6 +5,8 @@ import ResponsiveIcon from 'mdi-react/ResponsiveIcon';
 import LightbulbIcon from 'mdi-react/LightbulbIcon';
 import RocketIcon from 'mdi-react/RocketIcon';
 
+import Heading from '../../component/heading/heading';
+
 import './about.scss';
 
 class About extends React.Component {
@@ -12,8 +14,8 @@ class About extends React.Component {
     return (
       <section className="container-about" id="about">
         <Row>
-          <Col md={12} className="about">
-            About
+          <Col md={12}>
+            <Heading heading="About" />
           </Col>
         </Row>
         <Row>

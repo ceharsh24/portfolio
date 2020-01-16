@@ -1,9 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import DatabaseIcon from 'mdi-react/DatabaseIcon';
-import FlaskPlusOutlineIcon from 'mdi-react/FlaskPlusOutlineIcon';
-
+import Heading from '../../component/heading/heading';
 import './skills.scss';
 
 class SkillOverView extends React.Component {
@@ -17,7 +15,7 @@ class SkillOverView extends React.Component {
   renderSkills = skills => {
     return skills.map(skill => {
       return (
-        <ul className="list-unstyled skill-texts">
+        <ul className="list-unstyled">
           <li className="mb-2">
             {this.rendersvg()}
             <span>{skill}</span>
@@ -26,37 +24,28 @@ class SkillOverView extends React.Component {
       )
     })
   }
+  
   render() {
     return (
       <section className="container-skills" id="skills">
-        <Row>
-          <Col md={12} className="about">
-            Skills
-          </Col>
-        </Row>
+        <Heading heading="Skills" />
         <Row>
           <Col md={4} className="skill-container">
-            <div><DatabaseIcon size={85} className="skill-icon"/>
-              <div className="skill-container-inside">
-                <div className="skill-container-header">Front End</div>
-                {this.renderSkills(['React/Redux', 'Angular', 'TypeScript', 'JavaScript', 'Webpack/Gulp/Grunt', 'HTML/CSS/SASS/SCSS'])}
-              </div>
+            <div className="skill-container-inside">
+              <div className="skill-container-header">Front End</div>
+              {this.renderSkills(['React/Redux', 'Angular', 'TypeScript', 'JavaScript', 'Webpack/Gulp/Grunt', 'HTML/CSS/SASS/SCSS'])}
             </div>
           </Col>
           <Col md={4} className="skill-container">
-            <div><DatabaseIcon size={85} className="skill-icon"/>
-              <div className="skill-container-inside">
-                <div className="skill-container-header">Back End</div>
-                {this.renderSkills(['Node.JS', 'MongoDB', 'Python', 'Java', 'PostgresSQL/MySQL', 'PHP'])}
-              </div>
+            <div className="skill-container-inside">
+              <div className="skill-container-header">Back End</div>
+              {this.renderSkills(['Node.JS', 'MongoDB', 'Python', 'Java', 'PostgresSQL/MySQL', 'PHP'])}
             </div>
           </Col>
           <Col md={4} className="skill-container">
-            <div><FlaskPlusOutlineIcon size={85} className="skill-icon"/>
-              <div className="skill-container-inside">
-                <div className="skill-container-header">Others</div>
-                {this.renderSkills(['DevOps', 'Docker', 'Unit Testing', 'AWS', 'WebSockets/WebRTC', 'Electron Framework'])}
-              </div>
+            <div className="skill-container-inside">
+              <div className="skill-container-header">Others</div>
+              {this.renderSkills(['DevOps', 'Docker', 'Unit Testing', 'AWS', 'WebSockets/WebRTC', 'Electron Framework'])}
             </div>
           </Col>
         </Row>
