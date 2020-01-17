@@ -9,7 +9,7 @@ import Heading from '../../component/heading/heading';
 
 import './about.scss';
 
-class About extends React.Component {
+class About extends React.PureComponent {
   render() {
     return (
       <section className="container-about" id="about">

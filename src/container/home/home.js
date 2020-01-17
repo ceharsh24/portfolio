@@ -9,7 +9,7 @@ import myImage from '../../assets/smallImage.png';
 
 import './home.scss';
 
-class Home extends React.Component {
+class Home extends React.PureComponent {
   render() {
     return (
       <section className="home-bg-image" id="home">

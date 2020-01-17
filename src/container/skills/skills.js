@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import Heading from '../../component/heading/heading';
 import './skills.scss';
 
-class SkillOverView extends React.Component {
+class SkillOverView extends React.PureComponent {
 
   rendersvg = () => {
     return (
