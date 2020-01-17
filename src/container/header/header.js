@@ -32,7 +32,7 @@ class Header extends React.Component {
               <Nav.Link href="#education" className="navbar-links">Education</Nav.Link>
             </Nav>
             <Form inline>
-              <a href='https://explorer.scroll.network' alt='explorer' target={'_blank'}> 
+              <a href='#' alt='contactMe'> 
                 <Button variant="outline-light" className="contact-button">Contact Me</Button>
               </a>
             </Form>
