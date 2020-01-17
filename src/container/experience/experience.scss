@@ -2,6 +2,7 @@
   background-color: rgb(97, 85, 145);
   height: 20px;
 }
+
 .container-experience {
   color: #484a53;
   background-color: #fff;
@@ -16,14 +17,15 @@
   padding: 30px 0px;
 }
 
-.company-icon-container {
-  display: flex;
-  align-items: center;
-}
-
 .company-icon {
   max-height: 350px;
   width: 220px;
+}
+
+.ualbany-icon {
+  max-height: 320px;
+  width: 190px;
+  margin-left: 15px;
 }
 
 .company-name {

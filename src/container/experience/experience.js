@@ -8,10 +8,10 @@ import './experience.scss';
 class Experience extends React.PureComponent {
   renderCompanyIcon = iconName => {
     return (
-      <Col md={4} className="company-icon-container">
+      <Col md={4} className="icon-container">
         <Image
           src={require(`../../assets/${iconName}.png`)}
-          className="d-inline-block company-icon"
+          className={`d-inline-block ${iconName === 'ualbany' ? 'ualbany-icon' : 'company-icon'}`}
           alt={iconName}
         />
       </Col>
