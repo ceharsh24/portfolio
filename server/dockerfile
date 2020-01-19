@@ -10,5 +10,5 @@ RUN npm install
 # Copy app source
 COPY . .
 
-EXPOSE 3000
-CMD [ "npm", "run", "start-prod" ]
+EXPOSE 8080
+CMD [ "npm", "start" ]
