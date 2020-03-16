@@ -1,5 +1,15 @@
 version: 2.1
 jobs:
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy-prod:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - build
   deploy-prod:
     docker:
       # specify the version you desire here (you might not want node)
@@ -7,9 +17,3 @@ jobs:
     steps:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy_project.sh”
-    filters:
-      branches:
-        only:
-          - master
-    requires:
-      - build
