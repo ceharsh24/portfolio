@@ -30,10 +30,10 @@ class ContactMe extends React.Component {
     return (
       <Form.Group controlId={id}>
         <Form.Label className="contact-form-header">{label}</Form.Label>
-        <Form.Control 
-          type={type} 
-          placeholder={placeholder} 
-          value={input.value} 
+        <Form.Control
+          type={type}
+          placeholder={placeholder}
+          value={input.value}
           onChange={input.onChange}
           {...input}
         />
@@ -65,33 +65,33 @@ class ContactMe extends React.Component {
             <form onSubmit={this.props.handleSubmit(this.onSubmit)}>
               <Row>
                 <Col md={6}>
-                  <Field 
-                    id="formNameID" 
+                  <Field
+                    id="formNameID"
                     name="name"
                     type="text"
-                    component={this.renderInput} 
-                    label="Name:"  
+                    component={this.renderInput}
+                    label="Name:"
                     placeholder="Full Name"
                   />
                 </Col>
                 <Col md={6}>
-                  <Field 
-                    id="formEmailID" 
+                  <Field
+                    id="formEmailID"
                     name="email"
-                    type="email" 
-                    component={this.renderInput} 
-                    label="Email:"  
+                    type="email"
+                    component={this.renderInput}
+                    label="Email:"
                     placeholder="Email Address"
                   />
                 </Col>
               </Row>
               <Row>
                 <Col md={12}>
-                  <Field 
-                    id="formMessageID" 
-                    name="message" 
-                    component={this.renderTextArea} 
-                    label="Message:"  
+                  <Field
+                    id="formMessageID"
+                    name="message"
+                    component={this.renderTextArea}
+                    label="Message:"
                     placeholder="Message"
                   />
                 </Col>
