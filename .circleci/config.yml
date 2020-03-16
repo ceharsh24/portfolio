@@ -1,16 +1,15 @@
 version: 2.1
 jobs:
-  build:
-    working_directory: ~/my-website
-    # The primary container is an instance of the first image listed. The job's commands run in this container.
+  deploy-prod:
     docker:
-      - image: circleci/node:latest
-      # The secondary container is an instance of the second listed image which is run in a common network where ports exposed on the primary container are available on localhost.
+      # specify the version you desire here (you might not want node)
+      - image: circleci/node:7.10
     steps:
       - checkout
-      - run:
-          name: Update npm
-          command: 'sudo npm install -g npm@latest'
-      - run:
-          name: Install npm wee
-          command: npm install
+      - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP “./deploy_project.sh”
+    filters:
+      branches:
+        only:
+          - master
+    requires:
+      - build
