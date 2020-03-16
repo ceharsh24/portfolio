@@ -6,4 +6,4 @@ jobs:
       - image: circleci/node:7.10
     steps:
       - checkout
-      - run: ssh -t -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "sudo bash ./deploy_project.sh"
+      - run: ssh -t -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP "bash ./deploy_project.sh"
