@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  deploy-prod:
+  build:
     docker:
       # specify the version you desire here (you might not want node)
       - image: circleci/node:7.10
