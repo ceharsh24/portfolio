@@ -21,8 +21,12 @@ class About extends React.PureComponent {
         <Row>
           <Col md={12} className="about-body">
             <div>
-              I'm a Software Developer specialised in frontend and backend development for complex scalable web & desktop applications. Extensive Experience in creating Web Applications using&nbsp; 
-              <span className="about-body-highlight">MERN Stack, MEAN Stack</span>
+              I'm a Software Developer specialised in frontend and backend
+              development for complex scalable web & desktop applications.
+              Extensive Experience in creating Web Applications using&nbsp;
+              <span className="about-body-highlight">
+                MERN Stack, MEAN Stack
+              </span>
               &nbsp;and Cross Platform Desktop applications using&nbsp;
               <span className="about-body-highlight">Electron.</span>
             </div>
@@ -30,28 +34,33 @@ class About extends React.PureComponent {
         </Row>
         <Row className="about-footer">
           <Col md={3} className="about-footer-add-bottom-margin">
-            <SpeedometerIcon size={65} color="#c0e8fd"/>
-            <div className="about-footer-header">Fast</div> 
-            <div>Fast load times and lag free interaction, my highest priority.</div>
+            <SpeedometerIcon size={65} color="#c0e8fd" />
+            <div className="about-footer-header">Fast</div>
+            <div>
+              Fast load times and lag free interaction, my highest priority.
+            </div>
           </Col>
           <Col md={3} className="about-footer-add-bottom-margin">
-            <ResponsiveIcon size={65} color="#615591"/> 
+            <ResponsiveIcon size={65} color="#615591" />
             <div className="about-footer-header">Responsive</div>
             <div>My layouts will work on any device, big or small.</div>
           </Col>
           <Col md={3} className="about-footer-add-bottom-margin">
-            <LightbulbIcon size={65} color="#FBC02D"/>
-            <div className="about-footer-header">Intuitive</div> 
+            <LightbulbIcon size={65} color="#FBC02D" />
+            <div className="about-footer-header">Intuitive</div>
             <div>Strong preference for easy to use, intuitive UX/UI.</div>
           </Col>
           <Col md={3} className="about-footer-add-bottom-margin">
-            <RocketIcon size={65} color="#4DD0E1"/>
-            <div className="about-footer-header">Dynamic</div> 
-            <div>Websites don't have to be static, I love making pages come to life.</div>
+            <RocketIcon size={65} color="#4DD0E1" />
+            <div className="about-footer-header">Dynamic</div>
+            <div>
+              Websites don't have to be static, I love making pages come to
+              life.
+            </div>
           </Col>
         </Row>
       </section>
-    )
+    );
   }
 }
 

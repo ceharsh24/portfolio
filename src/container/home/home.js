@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import GithubCircleIcon from 'mdi-react/GithubCircleIcon';
 import LinkedInBoxIcon from 'mdi-react/LinkedinBoxIcon';
-import TwitterIcon from 'mdi-react/TwitterIcon'
+import TwitterIcon from 'mdi-react/TwitterIcon';
 
 import myImage from '../../assets/smallImage.png';
 
@@ -32,10 +32,10 @@ class Home extends React.PureComponent {
                   <LinkedInBoxIcon size={35} color="#90CAF9" className="add-margin no-left-margin" />
                 </a>
                 <a href="https://github.com/ceharsh24" target="blank">
-                  <GithubCircleIcon size={35} color="#ECEFF1" className="add-margin"/>
+                  <GithubCircleIcon size={35} color="#ECEFF1" className="add-margin" />
                 </a>
                 <a href="https://twitter.com/ceharsh" target="blank">
-                  <TwitterIcon size={35} color="#4ba1ec" className="add-margin"/>
+                  <TwitterIcon size={35} color="#4ba1ec" className="add-margin" />
                 </a>
               </div>
             </Col>
@@ -43,7 +43,7 @@ class Home extends React.PureComponent {
         </Container>
       </section>
     );
-  } 
+  }
 }
 
 export default Home;

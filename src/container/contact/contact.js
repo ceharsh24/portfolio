@@ -1,60 +1,77 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { Field, reduxForm } from 'redux-form'
+import {
+  Container, Row, Col, Form, Button,
+} from 'react-bootstrap';
+import { Field, reduxForm } from 'redux-form';
+import PropTypes from 'prop-types';
 
 import Heading from '../../component/heading/heading';
-import {sendEmail} from '../../action/index';
+import sendEmail from '../../action/index';
 
 import './contact.scss';
 
-const validate = values => {
-  const errors = {}
+const validate = (values) => {
+  const errors = {};
   if (!values.name) {
-    errors.name = 'Required'
+    errors.name = 'Required';
   }
   if (!values.email) {
-    errors.email = 'Required'
+    errors.email = 'Required';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = 'Invalid email address'
+    errors.email = 'Invalid email address';
   }
   if (!values.message) {
-    errors.message = 'Required'
+    errors.message = 'Required';
   } else if (values.message.length < 15) {
-    errors.message = 'Message should be greater than 15 characters'
+    errors.message = 'Message should be greater than 15 characters';
   }
-  return errors
-}
+  return errors;
+};
 
 class ContactMe extends React.Component {
-  renderInput = ({input, label, placeholder, id, type,  meta: { touched, error, warning }}) => {
-    return (
-      <Form.Group controlId={id}>
-        <Form.Label className="contact-form-header">{label}</Form.Label>
-        <Form.Control
-          type={type}
-          placeholder={placeholder}
-          value={input.value}
-          onChange={input.onChange}
-          {...input}
-        />
-        {touched && (error && <span>{error}</span>)}
-      </Form.Group>
-    )
-  }
+  renderInput = ({
+    input,
+    label,
+    placeholder,
+    id,
+    type,
+    meta: { touched, error },
+  }) => (
+    <Form.Group controlId={id}>
+      <Form.Label className="contact-form-header">{label}</Form.Label>
+      <Form.Control
+        type={type}
+        placeholder={placeholder}
+        value={input.value}
+        onChange={input.onChange}
+        {...input}
+      />
+      {touched && error && <span>{error}</span>}
+    </Form.Group>
+  );
 
-  renderTextArea = ({input, label, placeholder, id, type, meta: { touched, error, warning }}) => {
-    return (
-      <Form.Group controlId={id}>
-        <Form.Label className="contact-form-header">{label}</Form.Label>
-        <Form.Control as="textarea" rows="3" placeholder={placeholder} {...input}/>
-        {touched && (error && <span>{error}</span>)}
-      </Form.Group>
-    )
-  }
+  renderTextArea = ({
+    input,
+    label,
+    placeholder,
+    id,
+    meta: { touched, error },
+  }) => (
+    <Form.Group controlId={id}>
+      <Form.Label className="contact-form-header">{label}</Form.Label>
+      <Form.Control
+        as="textarea"
+        rows="3"
+        placeholder={placeholder}
+        {...input}
+      />
+      {touched && error && <span>{error}</span>}
+    </Form.Group>
+  );
 
   onSubmit = (formValues) => {
     sendEmail(formValues, this.props.reset);
-  }
+  };
 
   render() {
     return (
@@ -96,16 +113,23 @@ class ContactMe extends React.Component {
                   />
                 </Col>
               </Row>
-              <Button className="contact-submit-button" type="submit">Submit</Button>
+              <Button className="contact-submit-button" type="submit">
+                Submit
+              </Button>
             </form>
           </div>
         </Container>
       </section>
-    )
+    );
   }
 }
 
+ContactMe.propTypes = {
+  reset: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
+
 export default reduxForm({
   form: 'contactMe',
-  validate
-})(ContactMe)
+  validate,
+})(ContactMe);
