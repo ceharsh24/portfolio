@@ -1,0 +1,48 @@
+.container-skills {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  @media screen and (max-width : 768px) {
+    padding: 10px;
+  }
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+
+.mb-2 {
+  margin-bottom: .5rem !important;
+}
+
+.skill-container {
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.skill-container-inside {
+  padding: 15px 15px 4px 15px;
+  background-color: #262A43;
+  border-radius: 9px;
+  border: none;
+  margin-top: -35px;
+}
+
+.skill-icon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.skill-container-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
