@@ -3,6 +3,6 @@
 https://harsh.page
 
 
-# my-website
+# portfolio-website
 
 Feel free to clone and use it according to your need.
