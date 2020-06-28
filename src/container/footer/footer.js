@@ -8,7 +8,7 @@ class Footer extends React.PureComponent {
       <div className="footer">
         All rights reserved by Harsh Shah
       </div>
-    )
+    );
   }
 }
 
