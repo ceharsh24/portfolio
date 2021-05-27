@@ -1,11 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-// store
+
 import rootReducer from '../reducers/rootReducer';
-// component
 import Header from './header/header';
 import Home from './home/home';
 import Footer from './footer/footer';
@@ -17,10 +15,7 @@ import ContactMe from './contact/contact';
 
 import './App.scss';
 
-const rootStore = (window.devToolsExtension
-  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()(createStore)
-  : createStore)(rootReducer);
-// const rootStore = createStore(rootReducer);
+const rootStore = createStore(rootReducer);
 const App = () => (
   <Provider store={rootStore}>
     <Header />

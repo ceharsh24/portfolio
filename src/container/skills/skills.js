@@ -43,6 +43,7 @@ class SkillOverView extends React.PureComponent {
               <div className="skill-container-header">Front End</div>
               {this.renderSkills([
                 'React/Redux',
+                'React Native',
                 'Angular',
                 'TypeScript',
                 'JavaScript',
@@ -56,11 +57,10 @@ class SkillOverView extends React.PureComponent {
               <div className="skill-container-header">Back End</div>
               {this.renderSkills([
                 'Node.JS',
-                'MongoDB',
                 'Python',
                 'Java',
+                'MongoDB',
                 'PostgresSQL/MySQL',
-                'PHP',
               ])}
             </div>
           </Col>

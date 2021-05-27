@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 import Heading from '../../component/heading/heading';
 
@@ -8,9 +8,9 @@ import './experience.scss';
 class Experience extends React.PureComponent {
   renderCompanyIcon = (iconName) => (
     <Col md={4} className="icon-container">
-      <Image
+      <img
         // eslint-disable-next-line global-require
-        src={require(`../../assets/${iconName}.png`)}
+        src="../../assets/ibm.png"
         className={`d-inline-block ${
           iconName === 'ualbany' ? 'ualbany-icon' : 'company-icon'
         }`}
@@ -30,8 +30,7 @@ class Experience extends React.PureComponent {
     </>
   );
 
-  renderJobDetails = (details) =>
-    details.map((detail) => <li key={detail}>{detail}</li>);
+  renderJobDetails = (details) => details.map((detail) => <li key={detail}>{detail}</li>);
 
   render() {
     return (
@@ -46,12 +45,12 @@ class Experience extends React.PureComponent {
                 {this.renderCompanyDetails(
                   'IBM',
                   'Software Developer',
-                  'November 2019 - Current'
+                  'November 2019 - Current',
                 )}
                 <ul className="job-description">
                   {this.renderJobDetails([
                     'Part of development team for Northern Trust Bank’s fund utility project.',
-                    'Translate wireframes into interactive, dynamic code.',
+                    'Translate wire frames into interactive, dynamic code.',
                     'Implemented Dashboard Views, for Fund Utility Project using React, Redux and redux-form and used redux-saga to fetch data asynchronously (middleware).',
                     'UI/UX overhaul and performance enhancement resulting in by 85% load time improvement.',
                     'Enhancing the quality of Fund Utility application used by Northern Trust Bank based on user-escalated defects.',
@@ -65,7 +64,7 @@ class Experience extends React.PureComponent {
                 {this.renderCompanyDetails(
                   'SoluTech Inc.',
                   'Full-Stack Developer',
-                  'August 2018 - October 2019'
+                  'August 2018 - October 2019',
                 )}
                 <ul className="job-description">
                   {this.renderJobDetails([
@@ -86,7 +85,7 @@ class Experience extends React.PureComponent {
                 {this.renderCompanyDetails(
                   'University at Albany',
                   'Research Assistant',
-                  'August 2017 - August 2018'
+                  'August 2017 - August 2018',
                 )}
                 <ul className="job-description">
                   {this.renderJobDetails([
