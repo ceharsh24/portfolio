@@ -1,7 +1,10 @@
 import React from 'react';
 
 import {
-  Navbar, Button, Nav, Form,
+  Navbar,
+  Button,
+  Nav,
+  Form
 } from 'react-bootstrap';
 
 import './header.scss';

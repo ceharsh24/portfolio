@@ -4,9 +4,9 @@ import { PropTypes } from 'prop-types';
 
 import './heading.scss';
 
-const Heading = (props) => (
+const Heading = ({ heading }) => (
   <Row className="section-heading">
-    <Col md={12}>{props.heading}</Col>
+    <Col md={12}>{heading}</Col>
   </Row>
 );
 

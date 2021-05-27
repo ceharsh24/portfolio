@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Container, Col, Row } from 'react-bootstrap';
-import GithubCircleIcon from 'mdi-react/GithubCircleIcon';
-import LinkedInBoxIcon from 'mdi-react/LinkedinBoxIcon';
+import GithubCircleIcon from 'mdi-react/GithubIcon';
+import LinkedInBoxIcon from 'mdi-react/LinkedinIcon';
 import TwitterIcon from 'mdi-react/TwitterIcon';
 
 import myImage from '../../assets/smallImage.png';

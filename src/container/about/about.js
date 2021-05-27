@@ -21,14 +21,16 @@ class About extends React.PureComponent {
         <Row>
           <Col md={12} className="about-body">
             <div>
-              I'm a Software Developer specialised in frontend and backend
-              development for complex scalable web & desktop applications.
+              I'm a Software Developer specialized in frontend and backend
+              development for complex scalable web, desktop & mobile applications.
               Extensive Experience in creating Web Applications using&nbsp;
               <span className="about-body-highlight">
                 MERN Stack, MEAN Stack
               </span>
-              &nbsp;and Cross Platform Desktop applications using&nbsp;
-              <span className="about-body-highlight">Electron.</span>
+              &nbsp;, Cross Platform Desktop applications using&nbsp;
+              <span className="about-body-highlight">Electron</span>
+              &nbsp;and Mobile development using&nbsp;
+              <span className="about-body-highlight">React Native.</span>
             </div>
           </Col>
         </Row>
